@@ -1,0 +1,5 @@
+/* print.css – used by the receipt and plan pop-up windows (replaces inline body styles) */
+body{font-family:sans-serif;max-width:680px;margin:40px auto;color:CanvasText;background:Canvas}
+table.t{width:100%;border-collapse:collapse}
+table.t td{padding:6px}
+td.r{text-align:right}

@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sign in | Aurelia Hall – Banquets &amp; Celebrations</title><meta name="robots" content="noindex"><meta name="theme-color" content="#190812"><link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="apple-touch-icon" href="favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jost:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="images.css"><link rel="stylesheet" href="login.css"></head>
+<body>
+<canvas id="fx" aria-hidden="true"></canvas>
+<main class="lg">
+<section class="lg-art bg-login" id="lgArt" aria-label="Celebration highlights">
+<div class="shade"></div>
+<div class="balloons" aria-hidden="true"></div>
+<div class="polas" aria-hidden="true">
+<figure class="pola p1"><img id="pi1" alt="" loading="lazy"><figcaption>Weddings</figcaption></figure>
+<figure class="pola p2"><img id="pi2" alt="" loading="lazy"><figcaption>Birthdays</figcaption></figure>
+<figure class="pola p3"><img id="pi3" alt="" loading="lazy"><figcaption>Engagements</figcaption></figure>
+</div>
+<div class="lg-art-in">
+<span class="kicker">Welcome to Aurelia Hall</span>
+<h2>Every great <em id="rot">wedding</em><br>starts with one sign in.</h2>
+<p>Check dates, design your menu and decor, and pay in three easy installments.</p>
+<ul class="stats"><li><b data-n="600">0</b><span>guests in our grand ballroom</span></li><li><b data-n="5">0</b><span>stunning halls</span></li><li><b data-n="3">0</b><span>easy installments</span></li></ul>
+</div>
+</section>
+<section class="lg-form">
+<div class="topbar"><a class="back" href="index.html"><span class="arr">&larr;</span> Back to home</a><div class="tools"><button class="rtlb" id="rtl" type="button" aria-pressed="false" aria-label="Switch text direction to right-to-left"><b id="rtlT">RTL</b></button><button class="ib" id="th" type="button" aria-label="Toggle light or dark theme"></button></div></div>
+<div class="col">
+<div class="lg-card" id="lgCard">
+<div class="logo" role="img" aria-label="Aurelia Hall"><svg class="logo-mark" width="54" height="54" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lgL" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse"><stop offset="0" style="stop-color:var(--secondary)"/><stop offset="1" style="stop-color:var(--primary)"/></linearGradient></defs><circle cx="32" cy="32" r="29" fill="none" stroke="url(#lgL)" stroke-width="2.6"/><circle cx="32" cy="32" r="24.5" fill="none" class="logo-hair" stroke-width="1" stroke-dasharray="1 4.2" stroke-linecap="round"/><path d="M19.5 47.5 32 21l12.5 26.5" fill="none" stroke="url(#lgL)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M26 47.5V39a6 6 0 0 1 12 0v8.5" fill="none" class="logo-arc" stroke-width="2.8" stroke-linecap="round"/><path d="M32 9.5c.7 3.6 1.9 4.8 5.5 5.5-3.6.7-4.8 1.9-5.5 5.5-.7-3.600-1.900-4.800-5.500-5.500 3.600-.7 4.800-1.900 5.500-5.500z" class="logo-star"/></svg><span><b>AURELIA</b><small>BANQUETS &amp; CELEBRATIONS</small></span></div>
+
+<div id="viewMain">
+<div class="tabs" role="tablist" aria-label="Sign in or create account"><button type="button" role="tab" id="tabIn" aria-selected="true">Sign in</button><button type="button" role="tab" id="tabUp" aria-selected="false">Create account</button><i class="thumb" aria-hidden="true"></i></div>
+<span class="kicker small" id="lgK">Welcome back</span>
+<h1 id="lgH">Let’s <em>celebrate</em></h1>
+<form id="lgForm" novalidate>
+<div class="fld" id="nmW" hidden><input id="lgN" type="text" autocomplete="name" placeholder=" "><label for="lgN">Full name</label></div>
+<div class="fld"><input id="lgE" type="email" autocomplete="email" placeholder=" " required><label for="lgE">Email address</label></div>
+<div class="fld"><input id="lgP" type="password" autocomplete="current-password" placeholder=" " required><label for="lgP">Password</label><button type="button" class="eye" id="eye" aria-label="Show password" aria-pressed="false"></button></div>
+<p class="caps" id="caps" hidden>Caps Lock is on</p>
+<div id="upX" hidden>
+<div class="fld"><input id="lgT" type="tel" autocomplete="tel" placeholder=" " inputmode="tel"><label for="lgT">Phone <small>(optional)</small></label></div>
+<fieldset class="occ"><legend>I am planning a…</legend><div class="chips" id="occ"><label><input type="radio" name="occ" value="Wedding" checked><span>Wedding</span></label><label><input type="radio" name="occ" value="Engagement"><span>Engagement</span></label><label><input type="radio" name="occ" value="Birthday"><span>Birthday</span></label><label><input type="radio" name="occ" value="Corporate"><span>Corporate</span></label></div></fieldset>
+</div>
+<div class="meter" id="meter" hidden aria-live="polite"><span><i></i><i></i><i></i><i></i></span><small id="meterT">Password strength</small></div>
+<label class="chk terms" id="termsW" hidden><input type="checkbox" id="lgA"><span>I agree to the booking terms and privacy policy</span></label>
+<div class="opts"><label class="chk"><input type="checkbox" id="lgR" checked><span>Keep me signed in</span></label><button type="button" class="lnk" id="fgB">Forgot password?</button></div>
+<p class="msg" id="lgM" role="alert"></p>
+<button class="btn" id="lgGo" type="submit"><span class="bt">Sign in</span><span class="spin" aria-hidden="true"></span></button>
+</form>
+<p class="hint" id="demoHint">Just exploring? <button type="button" id="lgD">Use the demo account</button></p>
+</div>
+
+<div id="viewForgot" hidden>
+<span class="kicker small">No worries</span>
+<h1>Reset <em>password</em></h1>
+<form id="fgForm" novalidate>
+<div class="fld"><input id="fgE" type="email" autocomplete="email" placeholder=" " required><label for="fgE">Your account email</label></div>
+<div class="fld"><input id="fgP" type="password" autocomplete="new-password" placeholder=" " required><label for="fgP">New password</label></div>
+<p class="msg" id="fgM" role="alert"></p>
+<button class="btn" type="submit"><span class="bt">Save new password</span></button>
+<button class="btn ghost" type="button" id="fgBack">Back to sign in</button>
+</form>
+</div>
+</div>
+<div class="cue" aria-hidden="true"><span>Scroll for more</span><i></i></div>
+<section class="extras" aria-label="About Aurelia Hall">
+<span class="kicker small">Three reasons to say yes</span><h3>Why join <em>Aurelia</em>?</h3>
+<ul class="feat">
+<li><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 11h18"/></svg></span><div><b>Live availability</b><small>See which of our five halls is free, day by day.</small></div></li>
+<li><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.5 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg></span><div><b>Build your package</b><small>Choose menu and decor and watch the total update.</small></div></li>
+<li><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M2 10h20M6 15h4"/></svg></span><div><b>Three easy installments</b><small>Reserve with 40 percent and track every payment.</small></div></li>
+</ul>
+<div class="quote" id="quote" aria-live="polite"></div><div class="dots" id="qDots"></div>
+<span class="kicker small">Good to know</span><h3 class="fq">Quick <em>answers</em></h3>
+<details><summary>Is my account free?</summary><p>Yes. Creating an account costs nothing and you only pay when you reserve a date.</p></details>
+<details><summary>Where is my data kept?</summary><p>Accounts on this demo site are stored only in your own browser and never sent anywhere.</p></details>
+<details><summary>Can I change the text direction?</summary><p>Yes. Use the RTL button at the top to switch the page to right-to-left and back.</p></details>
+<p class="foot">Aurelia Hall · Chengalpattu, Tamil Nadu<br><small>© 2026 Aurelia Banquets &amp; Celebrations</small></p>
+</section>
+</div>
+</section>
+</main>
+<script src="images.js"></script><script src="login.js"></script></body></html>

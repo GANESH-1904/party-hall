@@ -1,0 +1,31 @@
+/* Aurelia Hall – one Unsplash photo per slot. Every ID below is used exactly once across the whole site. */
+const IMG={
+/* home 1 */
+idxHero:'photo-1607861884586-c7cfaed16290',
+occWedding:'photo-1681490463822-33fbfcd06431',occEngage:'photo-1744804298181-7fd6894ee84a',occBirthday:'photo-1719706654529-ca7e2ce5a2bb',occCorporate:'photo-1531058020387-3be344556be6',
+inStage:'photo-1744805624954-a6686543c3ff',inDome:'photo-1711575222650-8d192becc8eb',inLights:'photo-1717829025763-13fb9e652b99',inGala:'photo-1762765685348-4bced247d12c',
+foodBuffet:'photo-1742436448781-fe5eb077abd4',foodCake:'photo-1638871894014-047605c91c16',
+decFloral:'photo-1670529776180-60e4132ab90c',decStage:'photo-1772127822525-7eda37383b9f',decLights:'photo-1464047736614-af63643285bf',
+featBall:'photo-1761472606347-bfebc5a3e546',featRose:'photo-1772127822552-ce9ef537bdcf',featLounge:'photo-1485872299829-c673f5194813',
+/* home 2 */
+h2Hero:'photo-1532712938310-34cb3982ef74',h2Buffet:'photo-1555244162-803834f70033',h2Cake:'photo-1608655624472-49349f55d220',h2Decor:'photo-1469371670807-013ccf25f16a',
+h2Ballroom:'photo-1510076857177-7470076d4098',h2Terrace:'photo-1505944357431-27579db47558',
+h2s1:'photo-1770387688486-397ff1afdb2c',h2s2:'photo-1519225421980-715cb0215aed',h2s3:'photo-1492684223066-81342ee5ff30',h2s4:'photo-1514845505178-849cebf1a91d',
+offA1:'photo-1583939003579-730e3918a45a',offA2:'photo-1773409414133-9c5d141cb4c5',offA3:'photo-1519751138087-5bf79df62d5b',
+/* about */
+abHead:'photo-1744805624890-9931ebb50428',abSplit:'photo-1517457373958-b7bdd4587205',abKitchen:'photo-1763376360111-3597e5877517',abPastry:'photo-1710854897963-d45e8e26f7fc',abTable:'photo-1511795409834-ef04bbd61622',
+/* halls */
+hlHead:'photo-1772127822562-a898d9f5733c',hall1:'photo-1734217673499-c0af7be57546',hall2:'photo-1523438885200-e635ba2c371e',hall3:'photo-1527529482837-4698179dc6ce',hall4:'photo-1464491965784-a12f0f70642b',hall5:'photo-1524824267900-2fa9cbf7a506',
+hlSeat:'photo-1511578314322-379afb476865',hlEvery:'photo-1522158637959-30385a09e0da',
+/* packages */
+pkHead:'photo-1769638913559-c8c6984428fe',pkMenu1:'photo-1740047602722-b4993b79e4b7',pkMenu2:'photo-1495147466023-ac5c588e2e94',pkIncl:'photo-1502635385003-ee1e6a1a742d',
+offB1:'photo-1721677337543-37b07e7e28b5',offB2:'photo-1783949397986-87d4fbf2fbea',offB3:'photo-1517263904808-5dc91e3e7044',
+/* gallery */
+gaHead:'photo-1531686264889-56fdcabd163f',
+t1:'photo-1631687688319-ffd10d7e530b',t2:'photo-1772127822653-4431a9b8c31b',t3:'photo-1501281668745-f7f57925c3b4',t4:'photo-1514525253161-7a46d19cd819',t5:'photo-1540575467063-178a50c2df87',
+t6:'photo-1505373877841-8d25f7d46678',t7:'photo-1505366055494-2268a382e017',t8:'photo-1741969494307-55394e3e4071',t9:'photo-1710854898152-faf6d7d73294',t10:'photo-1604668915840-580c30026e5f',
+g1:'photo-1695641738244-25e5355e9a42',g2:'photo-1608306680606-871907587b27',g3:'photo-1525441273400-056e9c7517b3',g4:'photo-1606568939710-ad9c1f460dd2',
+idWed:'photo-1569705460033-cfaa4bf9f822',idBday:'photo-1689601535474-195d10eca664',idCorp:'photo-1561489396-888724a1543d',idEng:'photo-1612145463153-e97c1774fe2a',
+/* login + dashboard */
+login:'photo-1653518882444-7cf435ce07a8',dash:'photo-1530103862676-de8c9debad1d'};
+const imgUrl=(k,w=900)=>`https://images.unsplash.com/${IMG[k]}?auto=format&fit=crop&q=70&w=${w}`;
