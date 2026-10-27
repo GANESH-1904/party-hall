@@ -1,79 +1,40 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Celebration Planner | Aurelia Hall – Banquets &amp; Celebrations</title><meta name="robots" content="noindex"><meta name="theme-color" content="#190812"><link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="apple-touch-icon" href="favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jost:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="images.css"><link rel="stylesheet" href="dashboard.css"></head>
-<body>
-<header class="tb" id="tb"><div class="tb-in">
-<a class="tb-brand" href="index.html" aria-label="Aurelia Hall – back to the website"><svg class="logo-mark" width="44" height="44" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lgD" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse"><stop offset="0" style="stop-color:var(--secondary)"/><stop offset="1" style="stop-color:var(--primary)"/></linearGradient></defs><circle cx="32" cy="32" r="29" fill="none" stroke="url(#lgD)" stroke-width="2.6"/><circle cx="32" cy="32" r="24.5" fill="none" class="logo-hair" stroke-width="1" stroke-dasharray="1 4.2" stroke-linecap="round"/><path d="M19.5 47.5 32 21l12.5 26.5" fill="none" stroke="url(#lgD)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M26 47.5V39a6 6 0 0 1 12 0v8.5" fill="none" class="logo-arc" stroke-width="2.8" stroke-linecap="round"/><path d="M32 9.5c.7 3.6 1.9 4.8 5.5 5.5-3.6.7-4.8 1.9-5.5 5.5-.7-3.600-1.900-4.800-5.500-5.500 3.600-.7 4.800-1.900 5.500-5.500z" class="logo-star"/></svg><span><b>AURELIA</b><small>BANQUETS &amp; CELEBRATIONS</small></span></a>
-<nav class="steps" id="steps" aria-label="Planning steps"><a href="#sec-date" data-s="date"><i>1</i><span>Date</span></a><a href="#sec-menu" data-s="menu"><i>2</i><span>Menu</span></a><a href="#sec-decor" data-s="decor"><i>3</i><span>Decor</span></a><a href="#sec-pay" data-s="pay"><i>4</i><span>Payments</span></a><a href="#sec-tools" data-s="tools"><i>5</i><span>Toolkit</span></a></nav>
-<div class="tb-r"><button class="rtlb" id="rtl" type="button" aria-pressed="false" aria-label="Switch text direction to right-to-left"><b id="rtlT">RTL</b></button><button class="ib" id="th" type="button" aria-label="Toggle light or dark theme"></button></div>
-</div></header>
-<main>
-<section class="hero bg-dash" id="top"><canvas class="conf" id="conf" aria-hidden="true"></canvas><div class="hero-in">
-<div class="hero-t"><span class="kicker">Your celebration planner</span><h1>Plan a day they will <em>never forget</em></h1><p id="dSub">Check dates, build your package and track every payment in one place.</p><div class="hero-cta"><a class="btn" href="#sec-date">Find your date</a><a class="btn ghost" href="#sec-pay">My payments</a></div>
-<div class="ready" aria-live="polite"><div class="ring" id="ring"><svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="19"/><circle class="v" id="ringV" cx="22" cy="22" r="19"/></svg><b id="ringT">0%</b></div><span><b>Your plan is <span id="readyT">0%</span> ready</b><small id="readyS">Start by choosing a hall and a date.</small></span></div></div>
-<div class="hero-r"><div class="collage" aria-hidden="true"><figure class="cp c1"><img id="hc1" alt="" loading="lazy"></figure><figure class="cp c2"><img id="hc2" alt="" loading="lazy"></figure><figure class="cp c3"><img id="hc3" alt="" loading="lazy"></figure></div><aside class="clock" id="clock" aria-label="Party clock"></aside></div>
-</div></section>
-
-<section class="kpi-s" aria-label="Overview"><div class="wrap"><div id="alert" aria-live="polite"></div><div class="kpi" id="kpi"></div><span class="kicker small kpi-tag">Your celebration at a glance</span></div></section>
-
-<section class="inspo" aria-label="Celebration inspiration"><div class="wrap"><div class="inspo-h"><span class="kicker small">Get inspired</span><h2>Moments worth <em>celebrating</em></h2></div><div class="inspo-g" id="inspo"></div></div></section>
-
-<section class="blk" id="sec-date"><div class="wrap">
-<div class="sh reveal"><span class="num">1</span><div><span class="kicker small">Pick the perfect day</span><h2>Find your <em>date</em></h2><p>Choose a hall, then tap a day on the calendar. We tell you instantly if it is free.</p></div></div>
-<div class="grid2">
-<div class="col">
-<div class="card reveal"><div class="chd"><h3>Choose your hall</h3><button class="lnk" type="button" id="cmpB">Compare halls</button></div><input type="search" class="find" id="hSearch" placeholder="Type to find a hall (name or guests)" aria-label="Find a hall"><p class="tiph">Tap a hall to select it.</p><div class="halls" id="halls"></div><p class="mut" id="hNone" hidden>No hall matches. Clear the search to see all halls.</p></div>
-<div class="card reveal"><h3>Tell us about the day</h3>
-<label>Occasion <small>(tap again to unselect)</small></label><div class="pills" id="types"></div>
-<div class="row2"><div><label for="dG">Guests</label><div class="stepper"><button type="button" id="gMinus" aria-label="Fewer guests">−</button><input id="dG" type="number" min="10" value="100" inputmode="numeric"><button type="button" id="gPlus" aria-label="More guests">+</button></div><small class="mut" id="gMsg"></small></div>
-<div><label for="dN">Event name <small>(optional)</small></label><input id="dN" type="text" maxlength="40" placeholder="e.g. Priya &amp; Karthik’s wedding"></div></div>
-</div></div>
-<div class="col">
-<div class="card cal-card reveal"><div class="cal-h"><button class="ib" type="button" id="mPrev" aria-label="Previous month">‹</button><b id="mTitle"></b><button class="ib" type="button" id="mNext" aria-label="Next month">›</button></div><div class="cal" id="cal"></div>
-<div class="legend"><span><i class="k free"></i>Free</span><span><i class="k bk"></i>Booked</span><span><i class="k mine"></i>Your event</span><span><i class="k sel"></i>Selected</span></div></div>
-<div class="card res reveal" id="res" aria-live="polite"></div>
-</div></div>
-</div></section>
-
-<section class="blk alt" id="sec-menu"><div class="wrap">
-<div class="sh reveal"><span class="num">2</span><div><span class="kicker small">A feast, your way</span><h2>Choose your <em>menu</em></h2><p>Every kitchen is on site. Tap a style to select it, tap it again to unselect.</p></div></div>
-<div class="menu-wrap reveal"><div class="plates" id="plates"></div><div class="menucard" id="menuCard"></div></div>
-</div></section>
-
-<section class="blk" id="sec-decor"><div class="wrap">
-<div class="sh reveal"><span class="num">3</span><div><span class="kicker small">Make it sparkle</span><h2>Style your <em>decor</em></h2><p>Tap to add or remove. Your total updates as you go.</p></div></div>
-<input type="search" class="find" id="xSearch" placeholder="Type to find decor (e.g. lights, floral)" aria-label="Find decor"><div class="board reveal" id="board"></div>
-<div class="board-f reveal"><span id="decTot"></span><span class="bf-b"><button class="btn ghost sm" type="button" id="decAll">Select all</button><button class="btn ghost sm" type="button" id="decSkip">Unselect all</button></span></div>
-</div></section>
-
-<section class="blk alt" id="sec-pay"><div class="wrap">
-<div class="sh reveal"><span class="num">4</span><div><span class="kicker small">Easy on your wallet</span><h2>Pay in <em>installments</em></h2><p>Reserve your date with the first of three payments. Track every one below.</p></div></div>
-<div class="card plan reveal" id="planCard"></div>
-<div class="plan-tools reveal"><button class="btn ghost sm" type="button" id="prB">Print or save plan as PDF</button><button class="btn ghost sm" type="button" id="lnB">Copy share link</button></div>
-<h3 class="subh reveal">My celebrations</h3>
-<div id="mine"></div>
-</div></section>
-
-<section class="blk" id="sec-tools"><div class="wrap">
-<div class="sh reveal"><span class="num">5</span><div><span class="kicker small">Everything in its place</span><h2>Plan like a <em>pro</em></h2><p>Set a budget, manage your guest list and RSVPs, and follow a checklist built around your date.</p></div></div>
-<div class="tools">
-<div class="card reveal" id="budgetCard"><h3>Budget planner</h3>
-<label for="bgIn">My budget (₹)</label><input id="bgIn" type="number" min="0" step="10000" inputmode="numeric" placeholder="e.g. 500000">
-<div class="donut-w"><div class="donut" id="bgDonut"></div><ul class="leg" id="bgLeg"></ul></div><div class="bgs" id="bgS" aria-live="polite"></div></div>
-<div class="card reveal" id="taskCard"><h3>Planning checklist</h3><div class="pbar"><i id="tkBar"></i></div><small id="tkS"></small>
-<div class="selbar"><button type="button" class="btn ghost sm" id="tkAll">Select all</button><button type="button" class="btn ghost sm" id="tkNone">Unselect all</button></div>
-<ul class="tasks" id="tkList"></ul>
-<form class="gadd" id="tkAdd"><input type="text" id="tkN" maxlength="60" placeholder="Add your own task" aria-label="New task"><button class="btn sm" type="submit">Add</button></form></div>
-<div class="card reveal" id="guestCard"><h3>Guest list &amp; RSVP</h3><div class="gstats" id="gStats"></div>
-<form class="gadd" id="gAdd"><input type="text" id="gnN" maxlength="120" placeholder="Guest name (add several with commas)" aria-label="Guest name"><select id="gnG" aria-label="Group"><option>Family</option><option>Friends</option><option>Colleagues</option><option>VIP</option></select><button class="btn sm" type="submit">Add guest</button></form>
-<div class="gtools"><input type="text" id="gSearch" placeholder="Search guests" aria-label="Search guests"><button class="btn ghost sm" type="button" id="gCsv">Export CSV</button><button class="btn ghost sm" type="button" id="gUse">Use as guest count</button></div>
-<div class="selbar" id="gBulk"><label class="sa"><input type="checkbox" id="gAll" aria-label="Select all guests"><span id="gAllT">Select all</span></label><span class="sel-n" id="gSelN"></span><span class="sel-a" id="gSelA" hidden><button type="button" class="btn ghost sm" data-ba="Confirmed">Mark confirmed</button><button type="button" class="btn ghost sm" data-ba="Declined">Mark declined</button><button type="button" class="btn ghost sm" data-ba="Invited">Mark awaiting</button><button type="button" class="btn ghost sm bad" data-ba="del">Remove</button><button type="button" class="btn ghost sm" data-ba="none">Unselect all</button></span></div>
-<ul class="glist" id="gList"></ul></div>
-</div></div></section>
-</main>
-<button class="up" id="up" type="button" aria-label="Back to top">↑</button>
-<div class="tray" id="tray"></div>
-<dialog id="cmpD"><div class="pd"><div class="chd"><h3>Compare halls</h3><button class="ib" type="button" id="cmpX" aria-label="Close">✕</button></div><p class="mut" id="cmpS"></p><div class="cmpw" id="cmpT"></div></div></dialog>
-<dialog id="payD"><form method="dialog" class="pd"><h3 id="pdT">Pay installment</h3><p class="mut" id="pdS"></p><div class="pdA" id="pdA"></div>
-<div class="pdM"><label class="opt"><input type="radio" name="pm" checked><span>UPI</span></label><label class="opt"><input type="radio" name="pm"><span>Credit or debit card</span></label><label class="opt"><input type="radio" name="pm"><span>Net banking</span></label></div>
-<div class="pdB"><button class="btn" id="pdGo" value="go">Pay now</button><button class="btn ghost" value="cancel">Cancel</button></div><p class="mut sm">Demo payment. No real money is charged.</p></form></dialog>
-<script src="images.js"></script><script src="dashboard.js"></script>
-</body></html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Client Dashboard | Aurelia Banquets &amp; Celebrations</title>
+<meta name="description" content="Aurelia client dashboard: check hall availability, book event dates, select catering and decor add-ons and track payment installments.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Great+Vibes&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="dashboard.css">
+<script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.min.js" defer></script>
+<script src="main.js" defer></script>
+<script src="dashboard.js" defer></script>
+</head>
+<body class="bare">
+<div class="dash" id="dash">
+<div class="scrim" id="scrim"></div>
+<aside class="side" aria-label="Dashboard navigation"><div class="side-in"><a class="brand" href="index.html" aria-label="Aurelia – home"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="aug" gradientUnits="userSpaceOnUse" x1="8" y1="6" x2="56" y2="58"><stop offset="0" stop-color="#ffd978"/><stop offset=".55" stop-color="#f2a93b"/><stop offset="1" stop-color="#ff4f86"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="19" fill="#2a0f22"/><rect x="2" y="2" width="60" height="60" rx="19" fill="none" stroke="url(#aug)" stroke-width="1.6" opacity=".7"/><path d="M17 51V31a15 15 0 0 1 30 0v20" fill="none" stroke="url(#aug)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M25.5 51V32.5a6.5 6.5 0 0 1 13 0V51" fill="none" stroke="url(#aug)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M25.5 43h13" stroke="url(#aug)" stroke-width="2.4" stroke-linecap="round"/><path d="M12 51h40" stroke="url(#aug)" stroke-width="3" stroke-linecap="round"/><path d="M32 5.5l2 5 5 2-5 2-2 5-2-5-5-2 5-2z" fill="url(#aug)"/><circle cx="47.5" cy="14" r="1.6" fill="#ffd978"/><circle cx="16.5" cy="15" r="1.2" fill="#ffd978"/></svg><span class="brand-text"><b>AURELIA</b><small>BANQUETS &amp; CELEBRATIONS</small></span></a><nav aria-label="Dashboard sections"><button type="button" data-p="overview"><i data-lucide="layout-dashboard"></i>Overview</button><button type="button" data-p="availability"><i data-lucide="calendar-check"></i>Availability</button><button type="button" data-p="book"><i data-lucide="calendar-plus"></i>Book event</button><button type="button" data-p="addons"><i data-lucide="sparkles"></i>Catering &amp; decor</button><button type="button" data-p="payments"><i data-lucide="wallet"></i>Payments</button><button type="button" data-p="settings"><i data-lucide="user-cog"></i>Profile &amp; messages</button></nav><div class="ucard"><span class="pic"><span aria-hidden="true" data-initials>GU</span></span><div><b data-name>Guest User</b><small>Client account</small></div></div><button class="btn btn-secondary on-dark lo" type="button" id="logout"><i data-lucide="log-out"></i> Logout</button></div></aside>
+<div class="dmain"><header class="dtop"><div style="display:flex;gap:12px;align-items:center"><button class="ibtn dside-toggle" type="button" id="sidebtn" aria-label="Open menu"><i data-lucide="menu"></i></button><div class="ttl"><h1>Client Dashboard</h1><small id="today"></small></div></div>
+<div class="tools"><button class="ibtn" data-theme-toggle type="button"></button><button class="ibtn" data-rtl-toggle type="button">RTL</button>
+<div class="rel"><button class="ibtn" type="button" id="notbtn" aria-label="Notifications"><i data-lucide="bell"></i><span class="nbadge" id="nbadge">3</span></button><ul class="pop-menu" id="notmenu"></ul></div>
+<button class="avatar" type="button" id="avbtn" aria-label="Profile"><span aria-hidden="true" data-initials>GU</span></button></div></header>
+<div class="dbody">
+<section class="panel" id="p-overview"><div class="dhero"><div class="dh-in"><div class="dh-copy"><span class="script">Good to see you again</span><h2 id="hero-h">Welcome back!</h2><p id="hero-p">Your celebration is taking shape. Here’s where things stand.</p><div class="row-btns on-dark"><button class="btn btn-primary" type="button" id="hero-cta" data-go="book"><i data-lucide="calendar-plus"></i> Book an event</button><button class="btn btn-secondary" type="button" data-go="availability">Check dates</button></div></div><div class="cd" role="img" aria-live="polite"><b id="cd-n">—</b><span id="cd-l">days to your celebration</span><small id="cd-d"></small></div></div></div>
+<div class="kpis"><div class="kpi"><span class="ico"><i data-lucide="calendar-heart"></i></span><div><b id="k-ev">0</b><span>Upcoming events</span></div></div><div class="kpi"><span class="ico"><i data-lucide="badge-check"></i></span><div><b id="k-paid">₹0</b><span>Paid so far</span></div></div><div class="kpi"><span class="ico"><i data-lucide="hourglass"></i></span><div><b id="k-due">₹0</b><span>Balance due</span></div></div><div class="kpi"><span class="ico"><i data-lucide="sparkles"></i></span><div><b id="k-add">0</b><span>Add-ons chosen</span></div></div></div>
+<div class="box"><h3>Your celebration journey</h3><p class="sub-t2" style="margin:0">Four steps from hello to happily ever after.</p><div class="journey" id="o-journey"></div></div>
+<div class="dgrid"><div class="box"><h3>Your upcoming event</h3><p class="sub-t2">Details of your reserved date.</p><div id="o-event"></div></div><div class="box"><h3>Payment progress</h3><div id="o-ring" style="margin-top:12px"></div><h3 style="margin-top:20px">Planning checklist</h3><div id="o-check"></div></div></div>
+<div class="box"><h3>Inspiration for your day</h3><p class="sub-t2">Tap + to add a favourite to your plan.</p><div class="insp" id="o-insp"></div></div>
+<div class="box planner"><span class="pic"><span aria-hidden="true">EP</span></span><div><h3>Your Event Planner</h3><p>Your dedicated planner. Usually replies within the hour.</p></div><button class="btn btn-secondary btn-sm" type="button" data-go="settings">Message planner</button></div></section>
+<section class="panel" id="p-availability"><div class="box"><div class="cal-h"><div><h3>Hall availability</h3><p class="sub-t2" style="margin:0">Pick a hall and tap a green date to reserve.</p></div><div class="fld" style="margin:0;min-width:220px"><label for="a-hall" hidden>Hall</label><select id="a-hall"></select></div></div><div class="evimg wide" id="a-banner"></div><div class="cal-h"><button class="ibtn" type="button" id="prev" aria-label="Previous month"><i data-lucide="chevron-left" class="flip"></i></button><h3 id="mlabel"></h3><button class="ibtn" type="button" id="next" aria-label="Next month"><i data-lucide="chevron-right" class="flip"></i></button></div><div class="cal" id="cal"></div><div class="legend"><span style="--c:#1f8a4c">Available</span><span style="--c:#c0123c">Booked</span><span style="--c:#d6215e">Selected</span></div><div class="row-btns"><button class="btn btn-primary" type="button" id="usedate" disabled>Use this date</button></div></div></section>
+<section class="panel" id="p-book"><div class="dgrid"><div class="form-card"><h3>Book your event</h3><form id="bookform" action="#" novalidate><div class="fld"><label for="b-type">Event type</label><select id="b-type" required><option value="">Select event type</option><option>Wedding reception</option><option>Birthday</option><option>Corporate evening</option><option>Anniversary</option></select><span class="err" role="alert"></span></div><div class="fld"><label>Choose your hall</label><div class="tiles" id="b-tiles"></div><select id="b-hall" hidden required></select></div><div class="fld"><label for="b-date">Event date</label><input id="b-date" type="date" required><span class="err" role="alert"></span></div><div class="fld"><label for="b-guests">Expected guests</label><input id="b-guests" type="number" min="10" required value="150"><span class="hint" id="b-hint"></span><span class="err" role="alert"></span></div><button class="btn btn-primary btn-block" type="submit">Reserve this date</button></form></div><div class="box"><h3>Booking summary</h3><p class="sub-t2">Estimate updates as you choose.</p><div id="b-sum"></div></div></div></section>
+<section class="panel" id="p-addons"><div class="dgrid"><div class="box"><h3>Catering add-ons</h3><div id="ad-cat"></div><h3 style="margin-top:22px">Decor add-ons</h3><div id="ad-dec"></div></div><div class="box"><h3>Your selection</h3><p class="sub-t2">Totals use your guest count.</p><div id="ad-sum"></div><button class="btn btn-primary btn-block" type="button" id="ad-save" style="margin-top:16px">Save add-ons</button></div></div></section>
+<section class="panel" id="p-payments"><div class="kpis k3"><div class="kpi"><span class="ico"><i data-lucide="receipt"></i></span><div><b id="pm-t">₹0</b><span>Event total</span></div></div><div class="kpi"><span class="ico"><i data-lucide="badge-check"></i></span><div><b id="pm-p">₹0</b><span>Paid</span></div></div><div class="kpi"><span class="ico"><i data-lucide="hourglass"></i></span><div><b id="pm-d">₹0</b><span>Remaining</span></div></div></div><div class="box"><h3>Installment tracker</h3><div class="bar"><i id="pm-bar" style="width:0"></i></div><div class="insts" id="pm-body"></div><div class="row-btns"><button class="btn btn-secondary btn-sm" type="button" id="dl"><i data-lucide="download"></i> Download summary</button></div><p class="tabs-note" style="margin-top:12px">Payments are demo-only. Connect Stripe or PayPal buttons here.</p></div></section>
+<section class="panel" id="p-settings"><div class="pcover"><div><span class="pic big"><span aria-hidden="true" data-initials>GU</span></span><div><h3 data-name>Guest User</h3><small id="p-mail">guest@example.com · Client account</small></div></div></div><div class="dgrid"><div class="form-card"><h3>Profile</h3><form data-validate action="#" novalidate><div class="fld"><label for="s-n">Full name</label><input id="s-n" value="Guest User" required><span class="err" role="alert"></span></div><div class="fld"><label for="s-e">Email</label><input id="s-e" type="email" value="guest@example.com" required><span class="err" role="alert"></span></div><div class="fld"><label for="s-p">Phone</label><input id="s-p" type="tel" value="+91 90000 00000" required><span class="err" role="alert"></span></div><button class="btn btn-primary btn-block" type="submit">Save profile</button><div class="ok-msg" role="status">Profile saved.</div></form></div><div class="box"><h3>Message your planner</h3><p class="sub-t2">Your planner usually replies within the hour.</p><div class="chat" id="chat"><div class="bub">Hi there! Let me know if you’d like help choosing a decor theme.</div></div><form id="chatform" class="nl" style="margin:0" action="#"><div class="fld" style="margin:0"><label for="cm" hidden>Message</label><input id="cm" placeholder="Type a message" required></div><button class="btn btn-primary btn-sm" type="submit">Send</button></form></div></div></section>
+</div></div></div><div class="pop-menu" id="avmenu"><ul><li><i data-lucide="user"></i><span data-name>Guest User</span></li><li><button class="btn btn-secondary btn-sm" type="button" data-go="settings">Edit profile</button></li></ul></div>
+</body>
+</html>

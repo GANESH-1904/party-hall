@@ -1,12 +1,226 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Aurelia Hall – banquet halls, catering and decor for weddings, engagements, birthdays and corporate events in Chengalpattu. Check dates and book online."><meta name="theme-color" content="#190812"><meta property="og:title" content="Aurelia Hall – Banquets &amp; Celebrations"><meta property="og:description" content="Aurelia Hall – banquet halls, catering and decor for weddings, engagements, birthdays and corporate events in Chengalpattu. Check dates and book online."><title>Gallery | Aurelia Hall – Banquets &amp; Celebrations</title><link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="apple-touch-icon" href="favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jost:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="images.css"><link rel="stylesheet" href="style.css"></head><body><div id="hdr"></div>
-<section class="hx hx-gal"><div class="mqs" aria-hidden="true"><div class="row r1"><span class="mt bg-t1 fb-1"></span><span class="mt bg-t2 fb-2"></span><span class="mt bg-t3 fb-3"></span><span class="mt bg-t4 fb-4"></span><span class="mt bg-t5 fb-1"></span><span class="mt bg-t1 fb-2"></span><span class="mt bg-t2 fb-3"></span><span class="mt bg-t3 fb-4"></span><span class="mt bg-t4 fb-1"></span><span class="mt bg-t5 fb-2"></span></div><div class="row r2"><span class="mt bg-t6 fb-1"></span><span class="mt bg-t7 fb-2"></span><span class="mt bg-t8 fb-3"></span><span class="mt bg-t9 fb-4"></span><span class="mt bg-t10 fb-1"></span><span class="mt bg-t6 fb-2"></span><span class="mt bg-t7 fb-3"></span><span class="mt bg-t8 fb-4"></span><span class="mt bg-t9 fb-1"></span><span class="mt bg-t10 fb-2"></span></div></div><div class="wrap"><div class="glass"><span class="kicker">Moments we love</span><h1>Our <em>Gallery</em></h1><p>A glimpse of the evenings we have hosted.</p></div></div></section>
-<div class="wrap hb"><form class="hero-card" id="hcVisit"><div class="hc-t"><h3>Love a setup?</h3><p>Book a free venue visit and see it in person.</p></div><div class="hc-f"><div><label for="gvT">Event type</label><select id="gvT"><option>Wedding</option><option>Engagement</option><option>Reception</option><option>Birthday</option><option>Corporate</option></select></div><div><label for="gvD">Preferred date</label><input type="date" id="gvD"></div></div><button class="btn hc-a">Book a visit</button></form></div>
-<section><div class="wrap"><span class="tagline center">Browse the celebrations</span><div class="filters" id="gf"></div><div class="tiles" id="gt"></div></div></section>
-<section class="alt" data-block="palettes"></section>
-<section data-block="ideas"></section>
-<section class="alt"><div class="wrap"><div class="center"><span class="tagline">Captured in candlelight</span><h2>Moments from our halls</h2><p class="lead">Swipe through a few more favourites.</p></div><div class="strip"><div class="ph" data-img="g1" data-alt="Candlelit dinner tables set for an evening reception"><span class="cap">Candlelit tables</span></div><div class="ph" data-img="g2" data-alt="Pillar candles glowing on a plate"><span class="cap">Pillar-candle glow</span></div><div class="ph" data-img="g3" data-alt="Fine dining table setting"><span class="cap">Fine dining</span></div><div class="ph" data-img="g4" data-alt="Red and white candles with florals"><span class="cap">Candles &amp; roses</span></div></div></div></section>
-<section data-block="reviews" data-n="2"></section>
-<section class="alt" data-block="faq" data-set="gallery"></section>
-<div class="lb" id="lb"><div id="lbi"></div></div>
-<div id="ftr"></div>
-<script src="images.js"></script><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gallery – Weddings, Parties &amp; Events | Aurelia Banquets &amp; Celebrations</title>
+<meta name="description" content="Browse photos of weddings, birthday parties and celebrations at Aurelia banquet halls in Chengalpattu.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Great+Vibes&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="gallery.css">
+<script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.min.js" defer></script>
+<script src="main.js" defer></script>
+<script src="gallery.js" defer></script>
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+
+<!-- HERO -->
+<section class="gl-hero">
+  <img data-u="1516450360452-9312f5e86fc7" data-w="1800" alt="Crowd with raised hands at a live event" fetchpriority="high">
+  <div class="container">
+    <span class="script">Moments we love to remember</span>
+    <h1>Gallery</h1>
+    <p>A glimpse of the lights, laughter and detail that fill our halls.</p>
+    <div class="gl-jump" role="group" aria-label="Jump to a collection">
+      <button type="button" data-jump="wedding"><i data-lucide="heart"></i>Weddings <small>4</small></button>
+      <button type="button" data-jump="birthday"><i data-lucide="cake"></i>Birthdays <small>4</small></button>
+      <button type="button" data-jump="party"><i data-lucide="music"></i>Parties <small>4</small></button>
+    </div>
+    <a class="gl-scroll" href="#browse" aria-label="Scroll to the gallery"><i data-lucide="chevrons-down"></i></a>
+  </div>
+  <div class="gl-ticker" aria-label="Aurelia in numbers">
+    <div>
+      <span><b>240+</b> events a year</span><span><b>90,000+</b> guests welcomed</span><span><b>1,800+</b> floral arrangements</span><span><b>320+</b> cakes cut</span>
+      <span aria-hidden="true"><b>240+</b> events a year</span><span aria-hidden="true"><b>90,000+</b> guests welcomed</span><span aria-hidden="true"><b>1,800+</b> floral arrangements</span><span aria-hidden="true"><b>320+</b> cakes cut</span>
+    </div>
+  </div>
+</section>
+
+<!-- EXPLORER -->
+<section class="sec" id="browse-sec">
+  <div class="container">
+    <div class="sec-head rv"><span class="script">Browse by mood</span><h2 id="browse">Celebration gallery</h2><p>Every photograph shown in full, uncropped. Tap one to enlarge it, or save your favourites with the heart.</p></div>
+    <div class="gl-bar" data-filters>
+      <div class="pills" role="group" aria-label="Filter gallery">
+        <button class="pill on" data-g="cat" data-f="all" type="button" aria-pressed="true">All<small>12</small></button>
+        <button class="pill" data-g="cat" data-f="wedding" type="button" aria-pressed="false">Weddings<small>4</small></button>
+        <button class="pill" data-g="cat" data-f="birthday" type="button" aria-pressed="false">Birthdays<small>4</small></button>
+        <button class="pill" data-g="cat" data-f="party" type="button" aria-pressed="false">Parties<small>4</small></button>
+      </div>
+      <div class="gl-acts">
+        <div class="gl-seg" role="group" aria-label="Choose a layout">
+          <button type="button" data-view="masonry" aria-pressed="true"><i data-lucide="layout-grid"></i><span>Full frames</span></button>
+          <button type="button" data-view="prints" aria-pressed="false"><i data-lucide="layers"></i><span>Prints</span></button>
+        </div>
+        <button type="button" class="gl-act" id="glShuffle" aria-label="Shuffle photos"><i data-lucide="shuffle"></i><span>Shuffle</span></button>
+        <button type="button" class="gl-act primary" id="glPlay"><i data-lucide="play"></i><span>Slideshow</span></button>
+      </div>
+    </div>
+    <p class="gl-count" id="glCount" role="status">Showing all 12 photographs</p>
+
+    <div class="gl-grid" data-view="masonry">
+      <figure class="gl-item fitem rv" data-id="vineyard" data-title="Vineyard vows" data-cat="wedding" data-label="Wedding">
+        <button type="button" class="gl-open" aria-label="Open Vineyard vows"><img data-u="1779475501433-69a3a0b310f8" data-w="900" alt="Newlyweds strolling through a sunny vineyard with white flowers" loading="lazy"><img class="gl-bgfill" data-u="1779475501433-69a3a0b310f8" data-w="120" alt="" aria-hidden="true" loading="lazy"></button>
+        <figcaption class="gl-cap"><em>Wedding</em><b>Vineyard vows</b></figcaption>
+        <button type="button" class="gl-heart" aria-pressed="false" aria-label="Save Vineyard vows to your moodboard"><i data-lucide="heart"></i></button>
+      </figure>
+      <figure class="gl-item fitem rv" data-id="cake-roses" data-title="Rose icing" data-cat="birthday" data-label="Birthday">
+        <button type="button" class="gl-open" aria-label="Open Rose icing"><img data-u="1606983340126-99ab4feaa64a" data-w="900" alt="Chocolate birthday cake with frosting roses" loading="lazy"><img class="gl-bgfill" data-u="1606983340126-99ab4feaa64a" data-w="120" alt="" aria-hidden="true" loading="lazy"></button>
+        <figcaption class="gl-cap"><em>Birthday</em><b>Rose icing</b></figcaption>
+        <button type="button" class="gl-heart" aria-pressed="false" aria-label="Save Rose icing to your moodboard"><i data-lucide="heart"></i></button>
+      </figure>
+      <figure class="gl-item fitem rv" data-id="sunset-dance" data-title="Hands up" data-cat="party" data-label="Party">
+        <button type="button" class="gl-open" aria-label="Open Hands up"><img data-u="1495837174058-628aafc7d610" data-w="900" alt="Silhouettes of three women dancing at sunset with their hands in the air" loading="lazy"><img class="gl-bgfill" data-u="1495837174058-628aafc7d610" data-w="120" alt="" aria-hidden="true" loading="lazy"></button>
+        <figcaption class="gl-cap"><em>Party</em><b>Hands up</b></figcaption>
+        <button type="button" class="gl-heart" aria-pressed="false" aria-label="Save Hands up to your moodboard"><i data-lucide="heart"></i></button>
+      </figure>
+      <figure class="gl-item fitem rv" data-id="henna" data-title="Gold and henna" data-cat="wedding" data-label="Wedding">
+        <button type="button" class="gl-open" aria-label="Open Gold and henna"><img data-u="1762162089047-97e09435984d" data-w="900" alt="Hands adorned with henna and gold jewellery" loading="lazy"><img class="gl-bgfill" data-u="1762162089047-97e09435984d" data-w="120" alt="" aria-hidden="true" loading="lazy"></button>
+        <figcaption class="gl-cap"><em>Wedding</em><b>Gold and henna</b></figcaption>
+        <button type="button" class="gl-heart" aria-pressed="false" aria-label="Save Gold and henna to your moodboard"><i data-lucide="heart"></i></button>
+      </figure>
+      <figure class="gl-item fitem rv" data-id="costumes" data-title="Little heroes" data-cat="birthday" data-label="Birthday">
+        <button type="button" class="gl-open" aria-label="Open Little heroes"><img data-u="1765947383401-87cfa7d3e568" data-w="900" alt="Children in costumes at a birthday party with confetti" loading="lazy"><img class="gl-bgfill" data-u="1765947383401-87cfa7d3e568" data-w="120" alt="" aria-hidden="true" loading="lazy"></button>
+        <figcaption class="gl-cap"><em>Birthday</em><b>Little heroes</b></figcaption>
+        <button type="button" class="gl-heart" aria-pressed="false" aria-label="Save Little heroes to your moodboard"><i data-lucide="heart"></i></button>
+      </figure>
+      <figure class="gl-item fitem rv" data-id="sparklers" data-title="Sparklers" data-cat="party" data-label="Party">
+        <button type="button" class="gl-open" aria-label="Open Sparklers"><img data-u="1498673394965-85cb14905c89" data-w="900" alt="Person holding lit sparklers" loading="lazy"><img class="gl-bgfill" data-u="1498673394965-85cb14905c89" data-w="120" alt="" aria-hidden="true" loading="lazy"></button>
+        <figcaption class="gl-cap"><em>Party</em><b>Sparklers</b></figcaption>
+        <button type="button" class="gl-heart" aria-pressed="false" aria-label="Save Sparklers to your moodboard"><i data-lucide="heart"></i></button>
+      </figure>
+      <figure class="gl-item fitem rv" data-id="first-dance" data-title="First dance" data-cat="wedding" data-label="Wedding">
+        <button type="button" class="gl-open" aria-label="Open First dance"><img data-u="1648154164366-d067faecdc51" data-w="900" alt="Bride and groom dancing at their reception" loading="lazy"><img class="gl-bgfill" data-u="1648154164366-d067faecdc51" data-w="120" alt="" aria-hidden="true" loading="lazy"></button>
+        <figcaption class="gl-cap"><em>Wedding</em><b>First dance</b></figcaption>
+        <button type="button" class="gl-heart" aria-pressed="false" aria-label="Save First dance to your moodboard"><i data-lucide="heart"></i></button>
+      </figure>
+      <figure class="gl-item fitem rv" data-id="pink-cake" data-title="Pink and candlelit" data-cat="birthday" data-label="Birthday">
+        <button type="button" class="gl-open" aria-label="Open Pink and candlelit"><img data-u="1551879403-6adb554966fd" data-w="900" alt="White and pink cake with a lit candle" loading="lazy"><img class="gl-bgfill" data-u="1551879403-6adb554966fd" data-w="120" alt="" aria-hidden="true" loading="lazy"></button>
+        <figcaption class="gl-cap"><em>Birthday</em><b>Pink and candlelit</b></figcaption>
+        <button type="button" class="gl-heart" aria-pressed="false" aria-label="Save Pink and candlelit to your moodboard"><i data-lucide="heart"></i></button>
+      </figure>
+      <figure class="gl-item fitem rv" data-id="confetti-crowd" data-title="Confetti rain" data-cat="party" data-label="Party">
+        <button type="button" class="gl-open" aria-label="Open Confetti rain"><img data-u="1549342902-be005322599a" data-w="900" alt="Confetti falling over a huge crowd at a music performance" loading="lazy"><img class="gl-bgfill" data-u="1549342902-be005322599a" data-w="120" alt="" aria-hidden="true" loading="lazy"></button>
+        <figcaption class="gl-cap"><em>Party</em><b>Confetti rain</b></figcaption>
+        <button type="button" class="gl-heart" aria-pressed="false" aria-label="Save Confetti rain to your moodboard"><i data-lucide="heart"></i></button>
+      </figure>
+      <figure class="gl-item fitem rv" data-id="traditional" data-title="Seven vows" data-cat="wedding" data-label="Wedding">
+        <button type="button" class="gl-open" aria-label="Open Seven vows"><img data-u="1774024051727-499f15bff4c9" data-w="900" alt="Bride and groom in traditional Indian wedding attire" loading="lazy"><img class="gl-bgfill" data-u="1774024051727-499f15bff4c9" data-w="120" alt="" aria-hidden="true" loading="lazy"></button>
+        <figcaption class="gl-cap"><em>Wedding</em><b>Seven vows</b></figcaption>
+        <button type="button" class="gl-heart" aria-pressed="false" aria-label="Save Seven vows to your moodboard"><i data-lucide="heart"></i></button>
+      </figure>
+      <figure class="gl-item fitem rv" data-id="balloons" data-title="Balloon wall" data-cat="birthday" data-label="Birthday">
+        <button type="button" class="gl-open" aria-label="Open Balloon wall"><img data-u="1560128411-79892dd93bf8" data-w="900" alt="Multicoloured balloon arrangement beside a white curtain" loading="lazy"><img class="gl-bgfill" data-u="1560128411-79892dd93bf8" data-w="120" alt="" aria-hidden="true" loading="lazy"></button>
+        <figcaption class="gl-cap"><em>Birthday</em><b>Balloon wall</b></figcaption>
+        <button type="button" class="gl-heart" aria-pressed="false" aria-label="Save Balloon wall to your moodboard"><i data-lucide="heart"></i></button>
+      </figure>
+      <figure class="gl-item fitem rv" data-id="toast" data-title="The toast" data-cat="party" data-label="Party">
+        <button type="button" class="gl-open" aria-label="Open The toast"><img data-u="1644446608979-45eb5c2fbbe3" data-w="900" alt="Group of friends raising their wine glasses" loading="lazy"><img class="gl-bgfill" data-u="1644446608979-45eb5c2fbbe3" data-w="120" alt="" aria-hidden="true" loading="lazy"></button>
+        <figcaption class="gl-cap"><em>Party</em><b>The toast</b></figcaption>
+        <button type="button" class="gl-heart" aria-pressed="false" aria-label="Save The toast to your moodboard"><i data-lucide="heart"></i></button>
+      </figure>
+    </div>
+
+    <div class="gl-mood rv" id="glMood">
+      <div>
+        <span class="script">Your moodboard</span>
+        <p id="glMoodHint">Tap the heart on any photo to start collecting ideas for your day.</p>
+        <div class="gl-chips" id="glChips"></div>
+      </div>
+      <a class="btn btn-primary" id="glMoodGo" href="contact.html#visit" hidden><i data-lucide="send"></i> Share with a planner</a>
+    </div>
+  </div>
+</section>
+
+<!-- PICK A MOOD -->
+<section class="sec alt">
+  <div class="container">
+    <div class="sec-head rv"><span class="script">Palettes we love</span><h2>Pick a mood</h2><p>Choose a colour story and we’ll show you the matching photographs.</p></div>
+    <div class="gl-moods">
+      <button type="button" class="gl-moodcard rv" data-jump="wedding"><span class="gl-ph"><img data-u="1641834919507-b0271fe5186b" data-w="800" alt="Wedding arch decorated with flowers and greenery" loading="lazy"><span class="gl-sw" aria-hidden="true"><span style="--c:#f6d6dc"></span><span style="--c:#e8a5b8"></span><span style="--c:#e0a82e"></span><span style="--c:#fff4e6"></span></span></span><span class="bd"><h3>Blush &amp; Gold</h3><span class="tagl">Wedding evenings</span><p>Soft florals, warm candlelight and gilded details.</p><span class="go">See weddings <i data-lucide="arrow-right"></i></span></span></button>
+      <button type="button" class="gl-moodcard rv" data-jump="birthday"><span class="gl-ph"><img data-u="1764380746818-18c01e96df12" data-w="800" alt="Dessert table with cupcakes and pastries" loading="lazy"><span class="gl-sw" aria-hidden="true"><span style="--c:#fbd3e3"></span><span style="--c:#bfe3f5"></span><span style="--c:#fff2a8"></span><span style="--c:#c8f0d8"></span></span></span><span class="bd"><h3>Pastel Pop</h3><span class="tagl">Birthday brunches</span><p>Balloon arches and dessert bars in candy colours.</p><span class="go">See birthdays <i data-lucide="arrow-right"></i></span></span></button>
+      <button type="button" class="gl-moodcard rv" data-jump="party"><span class="gl-ph"><img data-u="1519214605650-76a613ee3245" data-w="800" alt="Neon sign reading bar, cocktails, dreams, disco, party" loading="lazy"><span class="gl-sw" aria-hidden="true"><span style="--c:#2a0f22"></span><span style="--c:#7a1f5c"></span><span style="--c:#d6215e"></span><span style="--c:#f5c451"></span></span></span><span class="bd"><h3>Midnight Disco</h3><span class="tagl">Party nights</span><p>Mirror balls, deep plum and bright spotlights.</p><span class="go">See parties <i data-lucide="arrow-right"></i></span></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- BEHIND THE LENS -->
+<section class="gl-lens">
+  <div class="container">
+    <div class="sec-head rv"><span class="script">Behind the lens</span><h2>Photography at Aurelia</h2><p>Bring your own team or use ours.</p></div>
+    <div class="gl-rail rv">
+      <button type="button" class="gl-pan on" aria-pressed="true"><img class="gl-pbg" data-u="1580707221190-bd94d9087b7f" data-w="900" alt="Hand holding a camera with a large zoom lens" loading="lazy"><span class="ico"><i data-lucide="camera"></i></span><span class="no">01</span><h3>Our photographers</h3><span class="tagl">Moments, kept</span><p>Candid and portrait coverage with same-week previews.</p></button>
+      <button type="button" class="gl-pan" aria-pressed="false"><img class="gl-pbg" data-u="1515634928627-2a4e0dae3ddf" data-w="900" alt="Person holding a film clapperboard" loading="lazy"><span class="ico"><i data-lucide="clapperboard"></i></span><span class="no">02</span><h3>Highlight films</h3><span class="tagl">Your night, on screen</span><p>A three-minute film of your evening, delivered in 30 days.</p></button>
+      <button type="button" class="gl-pan" aria-pressed="false"><img class="gl-pbg" data-u="1506947411487-a56738267384" data-w="900" alt="Quadcopter drone hovering in focus" loading="lazy"><span class="ico"><i data-lucide="plane"></i></span><span class="no">03</span><h3>Drone shots</h3><span class="tagl">The view from above</span><p>Allowed on the terrace with prior permission.</p></button>
+    </div>
+    <div class="gl-own rv"><i data-lucide="user-check"></i><span>Using your own photographer? Just share their name in advance for entry.</span></div>
+  </div>
+</section>
+
+<!-- SEASONS -->
+<section class="sec">
+  <div class="container">
+    <div class="sec-head rv"><span class="script">Pictures for every season</span><h2>Seasons at Aurelia</h2><p>The venue changes with the calendar. Pick a season.</p></div>
+    <div class="gl-seasons rv">
+      <div class="gl-stabs" role="tablist" aria-label="Seasons">
+        <button class="gl-stab" role="tab" aria-selected="true" data-s="summer" style="--c:#e0a82e" type="button"><span class="nd"><i data-lucide="sun"></i></span><span><b>Summer evenings</b><small>Long golden hours</small></span></button>
+        <button class="gl-stab" role="tab" aria-selected="false" tabindex="-1" data-s="monsoon" style="--c:#2b8fc7" type="button"><span class="nd"><i data-lucide="cloud-rain"></i></span><span><b>Monsoon magic</b><small>Rain on the roof</small></span></button>
+        <button class="gl-stab" role="tab" aria-selected="false" tabindex="-1" data-s="festive" style="--c:#d6215e" type="button"><span class="nd"><i data-lucide="sparkles"></i></span><span><b>Festive season</b><small>Lights everywhere</small></span></button>
+        <button class="gl-stab" role="tab" aria-selected="false" tabindex="-1" data-s="winter" style="--c:#6b7a90" type="button"><span class="nd"><i data-lucide="snowflake"></i></span><span><b>Winter weddings</b><small>Cool and glowing</small></span></button>
+      </div>
+      <div class="gl-stage" data-s="summer" role="tabpanel" aria-live="polite">
+        <span class="gl-sph on" data-s="summer"><img data-u="1773089155567-cdb5c15c6a9c" data-w="1400" alt="String lights glowing against a dusky sky" loading="lazy"></span><span class="gl-sph" data-s="monsoon"><img data-u="1727373217103-d64866ce6ee8" data-w="1400" alt="Rain-soaked window with trees in the background" loading="lazy"></span><span class="gl-sph" data-s="festive"><img data-u="1549194400-06e6874c2fd1" data-w="1400" alt="Fireworks lighting up the festive night sky" loading="lazy"></span><span class="gl-sph" data-s="winter"><img data-u="1641743442454-ac29749547d2" data-w="1400" alt="Path through a snowy forest with tall trees" loading="lazy"></span><span class="big"><i data-lucide="sun"></i></span>
+        <span class="script" id="glSeaTag">Long golden hours</span>
+        <h3 id="glSeaTitle">Summer evenings</h3>
+        <p id="glSeaText">Terrace dinners under lanterns.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOVE NOTES -->
+<section class="sec alt">
+  <div class="container">
+    <div class="sec-head rv"><span class="script">Guest favourites</span><h2>Love notes</h2><p>Words that came with the photographs.</p></div>
+    <div class="gl-voices rv">
+      <div class="gl-quote">
+        <i class="qmark" data-lucide="quote"></i>
+        <div class="stars" aria-hidden="true"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+        <div role="tabpanel" id="vp0" aria-labelledby="vt0"><blockquote>“The lighting made every photo look like a film still.”</blockquote><div class="by"><span class="chip">Wedding reception</span><small><i data-lucide="badge-check"></i> Verified host</small></div></div>
+        <div role="tabpanel" id="vp1" aria-labelledby="vt1" hidden><blockquote>“Our guests are still talking about the dessert table.”</blockquote><div class="by"><span class="chip">Anniversary dinner</span><small><i data-lucide="badge-check"></i> Verified host</small></div></div>
+        <div role="tabpanel" id="vp2" aria-labelledby="vt2" hidden><blockquote>“Stage, sound, seating — all perfect for 600 people.”</blockquote><div class="by"><span class="chip">Corporate gala</span><small><i data-lucide="badge-check"></i> Verified host</small></div></div>
+      </div>
+      <div class="gl-people" role="tablist" aria-label="Choose a guest story">
+        <div class="gl-rate"><b>4.9</b><div><div class="stars" aria-label="4.9 out of 5 stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div><span>Average from 600+ verified hosts</span></div></div>
+        <button class="gl-person" role="tab" id="vt0" aria-controls="vp0" aria-selected="true" type="button"><span class="pic"><span aria-hidden="true">AK</span><img data-u="1562337404-3044c84ac061" data-w="240" alt="Portrait of Anita Krishnan" width="120" height="120" loading="lazy"></span><span><b>Anita Krishnan</b><small>Wedding reception</small></span></button>
+        <button class="gl-person" role="tab" id="vt1" aria-controls="vp1" aria-selected="false" tabindex="-1" type="button"><span class="pic"><span aria-hidden="true">FK</span><img data-u="1548382131-e0ebb1f0cdea" data-w="240" alt="Portrait of Farah Khan" width="120" height="120" loading="lazy"></span><span><b>Farah Khan</b><small>Anniversary dinner</small></span></button>
+        <button class="gl-person" role="tab" id="vt2" aria-controls="vp2" aria-selected="false" tabindex="-1" type="button"><span class="pic"><span aria-hidden="true">SB</span><img data-u="1562124638-724e13052daf" data-w="240" alt="Portrait of Suresh Babu" width="120" height="120" loading="lazy"></span><span><b>Suresh Babu</b><small>Corporate gala</small></span></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TAG US -->
+<section class="sec">
+  <div class="container">
+    <div class="gl-tag rv">
+      <span class="script">Share your evening</span>
+      <h2>#AureliaCelebrations</h2>
+      <p>Post with our hashtag and we may feature you.</p>
+      <div class="row-btns center on-dark">
+        <a class="btn btn-primary" href="#"><i data-lucide="instagram"></i> Follow on Instagram</a>
+        <a class="btn btn-secondary" href="#"><i data-lucide="youtube"></i> Watch venue tour</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="site-footer"></div>
+</body>
+</html>

@@ -1,16 +1,203 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Aurelia Hall – banquet halls, catering and decor for weddings, engagements, birthdays and corporate events in Chengalpattu. Check dates and book online."><meta name="theme-color" content="#190812"><meta property="og:title" content="Aurelia Hall – Banquets &amp; Celebrations"><meta property="og:description" content="Aurelia Hall – banquet halls, catering and decor for weddings, engagements, birthdays and corporate events in Chengalpattu. Check dates and book online."><title>Packages | Aurelia Hall – Banquets &amp; Celebrations</title><link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="apple-touch-icon" href="favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jost:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600;1,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="images.css"><link rel="stylesheet" href="style.css"></head><body><div id="hdr"></div>
-<section class="hx hx-pack"><div class="wrap"><div class="hx-c"><span class="kicker">Everything, beautifully bundled</span><h1>Our <em>Packages</em></h1><p>Bundled hall, catering and decor. Customise any package from your dashboard.</p></div><div class="tiers" aria-label="Packages at a glance"><a class="t t1" href="#pk"><span class="medal">S</span><h3>Silver Soiree</h3><small>Up to 100 guests</small><b>₹1,20,000</b></a><a class="t t2" href="#pk"><em class="flag">Most loved</em><span class="medal">G</span><h3>Gold Gala</h3><small>Up to 250 guests</small><b>₹3,50,000</b></a><a class="t t3" href="#pk"><span class="medal">P</span><h3>Platinum Royale</h3><small>Up to 500 guests</small><b>₹7,80,000</b></a></div></div></section>
-<div class="wrap hb"><form class="hero-card" id="hcQuick"><div class="hc-t"><h3>Quick catering estimate</h3><p>Pick a menu and guest count. Open the full estimator for hall and decor.</p></div><div class="hc-f"><div><label for="pqG">Guests</label><input type="number" id="pqG" min="10" value="150"></div><div><label for="pqC">Menu</label><select id="pqC"></select></div></div><div class="hc-a" id="pqR"></div></form></div>
-<section><div class="wrap"><span class="tagline center">Bundled for brilliance</span><div class="grid" id="pk"></div></div></section>
-<section class="alt" id="menus"><div class="wrap"><div class="center"><span class="tagline">Freshly made, beautifully served</span><h2>Menus we cook on site</h2><p class="lead">Choose a style, then fine-tune dishes with our chef at your tasting.</p></div><div class="menu"><div class="duo"><div class="ph" data-img="pkMenu1" data-alt="Catered table spread"></div><div class="ph" data-img="pkMenu2" data-alt="Dessert counter"></div></div><div><div class="tabs" id="mtabs"></div><div id="mbody"></div></div></div></div></section>
-<section><div class="wrap"><span class="tagline">The finishing touches</span><h2>Add-ons</h2><div class="grid c2"><div class="panel"><h3>Catering</h3><div id="ca"></div></div><div class="panel"><h3>Decor &amp; entertainment</h3><div id="de"></div></div></div></div></section>
-<section class="alt" data-block="extras"></section>
-<section><div class="wrap"><div class="split"><div><span class="tagline">Support that comes standard</span><h2>Included with every booking</h2><p>Planning support is part of the price, not an extra.</p><ul class="tick"><li>A dedicated event coordinator</li><li>Free menu tasting for four people</li><li>Decor consultation and mood board</li><li>Three-part installment plan</li><li>One free date change up to 30 days before</li><li>Setup and cleanup crew</li></ul><a class="btn" href="#" data-enquire>Book a venue visit</a></div><div class="ph" data-img="pkIncl" data-alt="Styled glasses on a dining table"><span class="cap">Styled tables</span></div></div></div></section>
-<section class="alt" data-block="offers" data-set="B"></section>
-<section id="estimator"><div class="wrap"><div class="center"><span class="tagline">Know your numbers</span><h2>Estimate your event cost</h2><p class="lead">Adjust the options for a quick estimate. The final price is confirmed when you book.</p></div>
-<div class="est"><div class="panel"><div class="row2"><div><label for="eh">Hall</label><select id="eh"></select></div><div><label for="eg">Guests</label><input type="number" id="eg" min="10" value="150"></div></div><label for="ec">Catering</label><select id="ec"></select><label>Decor &amp; extras</label><div id="ed"></div><p class="msg" id="em2"></p></div>
-<div class="panel sum"><h3>Your estimate</h3><div id="er"></div><a class="btn w100 mt16" id="ebook" href="dashboard.html">Check dates for this hall</a><a class="btn ghost w100 mt10" id="ewa" target="_blank" rel="noopener">Send quote on WhatsApp</a></div></div></div></section>
-<section class="alt" data-block="budget"></section>
-<section data-block="faq" data-set="packages"></section>
-<div id="ftr"></div>
-<script src="images.js"></script><script src="script.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Packages – Banquet Hall Packages &amp; Add-ons | Aurelia Banquets &amp; Celebrations</title>
+<meta name="description" content="Silver, Gold and Platinum banquet packages in Chengalpattu with catering, decor and flexible installment plans.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg?v=4">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Great+Vibes&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.min.js" defer></script>
+<script src="main.js" defer></script>
+<script src="packages.js" defer></script>
+</head>
+<body>
+<div id="site-header"></div>
+<main id="main">
+
+<!-- HERO -->
+<section class="pk-hero">
+  <div class="container pk-hero-in">
+    <div class="rv">
+      <span class="script">Clear inclusions, calm planning</span>
+      <h1>Packages</h1>
+      <p>Choose a package, personalise it with add-ons and pay in comfortable installments.</p>
+      <ul class="pk-pricerow">
+        <li><i data-lucide="award"></i><b>Silver</b><span>₹85,000</span><small>up to 100 guests</small></li>
+        <li><i data-lucide="crown"></i><b>Gold</b><span>₹2,40,000</span><small>up to 300 guests</small></li>
+        <li><i data-lucide="gem"></i><b>Platinum</b><span>₹5,90,000</span><small>up to 1,000 guests</small></li>
+      </ul>
+      <div class="row-btns on-dark">
+        <a class="btn btn-primary" href="#plans">Compare plans</a>
+        <a class="btn btn-secondary" href="#build">Build my estimate</a>
+      </div>
+    </div>
+    <div class="pk-hero-art rv">
+      <div class="ph"><img data-u="1484156818044-c040038b0719" data-w="900" alt="Wine glasses lined up on an elegant table" width="900" height="1080" fetchpriority="high"></div>
+    </div>
+  </div>
+</section>
+
+<!-- TIERS -->
+<section class="sec" id="plans">
+  <div class="container">
+    <div class="sec-head rv"><span class="script">Three ways to celebrate</span><h2>Pick your package</h2><p>Prices are indicative; final quotes follow a venue visit.</p></div>
+    <div class="pk-tiers">
+      <article class="pk-tier silver rv">
+        <div class="pk-top"><span class="pk-emb"><i data-lucide="award"></i></span><span class="pk-metal">Silver</span><h3>Intimate</h3><p>For small, heartfelt gatherings.</p></div>
+        <div class="pk-body">
+          <div class="pk-price"><b>₹85,000</b><small>/ event</small></div>
+          <div class="pk-stats"><div><b>6 hrs</b><span>Hall time</span></div><div><b>100</b><span>Guests</span></div></div>
+          <ul class="pk-feat"><li><i data-lucide="check"></i>Starter menu</li><li><i data-lucide="check"></i>Basic stage decor</li></ul>
+          <a class="btn btn-secondary btn-block" href="#build" data-pkg="silver">Customise Silver</a>
+        </div>
+      </article>
+      <article class="pk-tier gold is-pop rv">
+        <div class="pk-top"><span class="pk-ribbon"><i data-lucide="star"></i>Most loved</span><span class="pk-emb"><i data-lucide="crown"></i></span><span class="pk-metal">Gold</span><h3>Signature</h3><p>Our most-loved all-rounder.</p></div>
+        <div class="pk-body">
+          <div class="pk-price"><b>₹2,40,000</b><small>/ event</small></div>
+          <div class="pk-stats"><div><b>8 hrs</b><span>Hall time</span></div><div><b>300</b><span>Guests</span></div></div>
+          <ul class="pk-feat"><li><i data-lucide="check"></i>Full catering menu</li><li><i data-lucide="check"></i>Floral stage decor</li><li><i data-lucide="check"></i>Assistant event planner</li><li><i data-lucide="check"></i>Tasting for 4</li></ul>
+          <a class="btn btn-primary btn-block" href="#build" data-pkg="gold">Customise Gold</a>
+        </div>
+      </article>
+      <article class="pk-tier plat rv">
+        <div class="pk-top"><span class="pk-emb"><i data-lucide="gem"></i></span><span class="pk-metal">Platinum</span><h3>Grand</h3><p>The full Aurelia production.</p></div>
+        <div class="pk-body">
+          <div class="pk-price"><b>₹5,90,000</b><small>/ event</small></div>
+          <div class="pk-stats"><div><b>12 hrs</b><span>Hall time</span></div><div><b>1,000</b><span>Guests</span></div></div>
+          <ul class="pk-feat"><li><i data-lucide="check"></i>Chef’s menu with live counters</li><li><i data-lucide="check"></i>Custom decor design</li><li><i data-lucide="check"></i>Dedicated planner</li><li><i data-lucide="check"></i>DJ and lighting</li><li><i data-lucide="check"></i>Bridal suite</li></ul>
+          <a class="btn btn-secondary btn-block" href="#build" data-pkg="platinum">Customise Platinum</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="sec alt">
+  <div class="container">
+    <div class="sec-head rv"><span class="script">What each package includes</span><h2>Compare inclusions</h2><p>See exactly what you get before you book.</p></div>
+    <div class="pk-cmp rv" tabindex="0" role="region" aria-label="Package comparison table">
+      <table>
+        <thead><tr><th scope="col">Feature</th><th scope="col"><i data-lucide="award"></i>Silver</th><th scope="col" class="hl"><i data-lucide="crown"></i>Gold</th><th scope="col"><i data-lucide="gem"></i>Platinum</th></tr></thead>
+        <tbody>
+          <tr class="grp"><th colspan="4" scope="colgroup">Food and decor</th></tr>
+          <tr><th scope="row">Catering</th><td>Starter menu</td><td>Full menu</td><td>Chef’s menu + live counters</td></tr>
+          <tr><th scope="row">Decor</th><td>Basic</td><td>Floral stage</td><td>Custom design</td></tr>
+          <tr class="grp"><th colspan="4" scope="colgroup">The experience</th></tr>
+          <tr><th scope="row">Event planner</th><td class="no">–</td><td>Assistant</td><td>Dedicated</td></tr>
+          <tr><th scope="row">DJ and lighting</th><td class="no">–</td><td>Add-on</td><td><span class="yes"><i data-lucide="check-circle-2"></i> Included</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ESTIMATE BUILDER -->
+<section class="sec" id="build">
+  <div class="container">
+    <div class="sec-head rv"><span class="script">Make it yours</span><h2>Build your estimate</h2><p>Pick a package, set your guest count and add the extras. Your total and installments update live.</p></div>
+    <div class="pk-build-grid">
+      <div>
+        <fieldset class="pk-panel rv">
+          <legend class="pk-lab"><em>1</em>Choose a package</legend>
+          <div class="pk-seg">
+            <label><input type="radio" name="pkg" value="silver"><span class="pk-opt"><i data-lucide="award"></i><b>Silver</b><small>from ₹85,000</small></span></label>
+            <label><input type="radio" name="pkg" value="gold" checked><span class="pk-opt"><i data-lucide="crown"></i><b>Gold</b><small>from ₹2,40,000</small></span></label>
+            <label><input type="radio" name="pkg" value="platinum"><span class="pk-opt"><i data-lucide="gem"></i><b>Platinum</b><small>from ₹5,90,000</small></span></label>
+          </div>
+        </fieldset>
+        <div class="pk-panel rv">
+          <div class="pk-lab"><em>2</em><label for="pkGuests" style="letter-spacing:inherit">Guest count</label></div>
+          <div class="pk-guests-top"><span class="chip">Drag to adjust</span><output id="pkGuestVal" for="pkGuests">150<small>guests</small></output></div>
+          <input type="range" id="pkGuests" min="20" max="1000" step="10" value="150">
+          <div class="pk-scale"><span>20</span><span>250</span><span>500</span><span>750</span><span>1,000</span></div>
+          <p class="pk-fit" id="pkFit" role="status"></p>
+        </div>
+        <fieldset class="pk-panel rv">
+          <legend class="pk-lab"><em>3</em>Add the extras</legend>
+          <div class="pk-addons">
+            <button type="button" class="pk-add" data-id="bar" aria-pressed="false">
+              <span class="ph"><img data-u="1541532713592-79a0317b6b77" data-w="600" alt="Guests toasting at a bar" width="600" height="412" loading="lazy"></span>
+              <span class="pk-tick"><i class="i-plus" data-lucide="plus"></i><i class="i-check" data-lucide="check"></i></span>
+              <span class="pk-add-b"><span class="tagl">Cheers, all evening</span><b>Beverage bar</b><small>Mocktail and soft-drink bars with trained servers.</small><em>From ₹250 / guest</em></span>
+            </button>
+            <button type="button" class="pk-add" data-id="cake" aria-pressed="false">
+              <span class="ph"><img data-u="1577998474517-7eeeed4e448a" data-w="600" alt="Cake topped with a lit sparkler" width="600" height="412" loading="lazy"></span>
+              <span class="pk-tick"><i class="i-plus" data-lucide="plus"></i><i class="i-check" data-lucide="check"></i></span>
+              <span class="pk-add-b"><span class="tagl">Sweet finale</span><b>Custom cake</b><small>Multi-tier cakes and dessert tables to match your decor.</small><em>From ₹6,500</em></span>
+            </button>
+            <button type="button" class="pk-add" data-id="decor" aria-pressed="false">
+              <span class="ph"><img data-u="1531956531700-dc0ee0f1f9a5" data-w="600" alt="Birthday decoration set-up" width="600" height="412" loading="lazy"></span>
+              <span class="pk-tick"><i class="i-plus" data-lucide="plus"></i><i class="i-check" data-lucide="check"></i></span>
+              <span class="pk-add-b"><span class="tagl">Balloons and backdrops</span><b>Theme decor</b><small>Backdrops, balloon arches and table styling.</small><em>From ₹18,000</em></span>
+            </button>
+          </div>
+        </fieldset>
+      </div>
+
+      <aside class="pk-sum rv" aria-label="Your estimate">
+        <h3><i data-lucide="receipt"></i>Your estimate</h3>
+        <div id="pkLines"></div>
+        <div class="pk-total"><span>Estimated total</span><b id="pkTotal">₹0</b></div>
+        <p class="pk-gst">Excludes GST, which is added to the final quote.</p>
+        <h4>Pay in comfortable steps</h4>
+        <div class="pk-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+        <ol class="pk-inst">
+          <li><span class="dt"></span><b>40% to book</b><em id="pkI1">₹0</em><small>Paid on confirmation</small></li>
+          <li><span class="dt"></span><b>30% midway</b><em id="pkI2">₹0</em><small>Due 60 days before the event</small></li>
+          <li><span class="dt"></span><b>30% final</b><em id="pkI3">₹0</em><small>Due 7 days before the event</small></li>
+        </ol>
+        <a class="btn btn-primary btn-block" href="login.html"><i data-lucide="calendar-check"></i> Reserve this plan</a>
+        <p class="note">Track every payment in your client dashboard.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- PLANS THAT WORKED -->
+<section class="sec alt">
+  <div class="container">
+    <div class="sec-head rv"><span class="script">Real events, real budgets</span><h2>Plans that worked</h2><p>Examples from recent hosts, shared with permission.</p></div>
+    <div class="pk-cases">
+      <article class="pk-case s rv"><span class="chip">Silver</span><div class="big">80<small>guests</small></div><h3>Birthday brunch</h3><p>A pastel dessert bar and balloon arch for a first birthday.</p></article>
+      <article class="pk-case g rv"><span class="chip">Gold</span><div class="big">220<small>guests</small></div><h3>Anniversary dinner</h3><p>A plated menu, live music and a floral entrance arch.</p></article>
+      <article class="pk-case p rv"><span class="chip">Platinum</span><div class="big">900<small>guests</small></div><h3>Reception dance night</h3><p>Custom stage, DJ, lighting and a six-course chef’s menu.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- HOW BOOKING WORKS -->
+<section class="sec">
+  <div class="container">
+    <div class="sec-head rv"><span class="script">How booking works</span><h2>Four simple steps</h2><p>From enquiry to event day.</p></div>
+    <div class="pk-path">
+      <article class="pk-stp rv"><span class="nd" data-n="1"><i data-lucide="map-pin"></i></span><h3>Visit</h3><span class="tagl">Meet the halls</span><p>Tour and taste.</p></article>
+      <article class="pk-stp rv"><span class="nd" data-n="2"><i data-lucide="layout-grid"></i></span><h3>Choose</h3><span class="tagl">Pick a package</span><p>Select hall and date.</p></article>
+      <article class="pk-stp rv"><span class="nd" data-n="3"><i data-lucide="sparkles"></i></span><h3>Customise</h3><span class="tagl">Add the extras</span><p>Catering and decor.</p></article>
+      <article class="pk-stp rv"><span class="nd" data-n="4"><i data-lucide="badge-check"></i></span><h3>Confirm</h3><span class="tagl">Secure the day</span><p>Pay the booking amount.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec alt">
+  <div class="container">
+    <div class="sec-head rv"><span class="script">Package questions</span><h2>Good to know</h2><p>Answers to the most common questions.</p></div>
+    <div class="faq rv">
+      <details><summary>Are taxes included?</summary><p>Prices exclude GST, which is added to the final quote.</p></details>
+      <details><summary>Can I upgrade later?</summary><p>Yes. You can upgrade up to 30 days before the event, subject to availability.</p></details>
+      <details><summary>What is the cancellation policy?</summary><p>The booking amount is refundable up to 90 days before the event, minus a processing fee.</p></details>
+      <details><summary>Is there a payment gateway?</summary><p>Online payments plug into Stripe or PayPal buttons in your dashboard.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+<div id="site-footer"></div>
+</body>
+</html>
